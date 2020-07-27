@@ -1,0 +1,120 @@
+body{
+    margin:0;
+    padding: 10px;
+    background-color: #B0C4DE;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.container{
+    padding:10px;
+    width:450px;
+    margin:0 auto;
+}
+.content{
+    border-radius: 20px;
+    background-color: beige;
+    height: 500px;
+    max-height:500px;
+    width: 450px;
+    overflow: auto;
+}
+
+.content::-webkit-scrollbar {
+    display: none;
+}
+
+.item{
+    width:400px;
+    height: 45px;
+    min-height: 45px;
+    position: relative;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+}
+.item:hover{
+    background-color: aliceblue;
+}
+
+.item i.complete{
+    position: absolute;
+    font-size: 25px;
+    padding-left:5px;
+    left:15px;
+    top:10px;
+}
+.item i.complete:hover{
+    cursor: pointer;
+}
+.fa-circle-thin{
+    padding: 5px;
+    color: darkslategrey;
+}
+.fa-circle-thin:hover{
+    color: #6eb200;
+}
+
+.fa-check-circle{
+    color:#6eb200;
+    padding: 5px;
+}
+.fa-check-circle:hover{
+    color: black;
+}
+
+.fa-trash-o{
+    padding: 5px;
+    position: absolute;
+    color: red;
+}
+.item p.text{
+    position: absolute;
+    padding:0;
+    font-size: 18px;
+    left:50px;
+    max-width:300px;
+}
+.lineThrough{
+    text-decoration: line-through;
+    color : #ccc;
+}
+.item i.delete{
+    position: absolute;
+    font-size: 25px;
+    right:15px;
+    top:10px;
+}
+.item i.delete:hover{
+    color:#af0000;
+    cursor: pointer;
+}
+
+.add-to-do{
+    position: relative;
+    padding: 10px;
+    margin-top: 10px;
+    height: 40px;
+}
+.add-to-do i{
+    padding: 5px;
+    font-size: 30px;
+    color: blue;
+    position: absolute;
+}
+.add-to-do i:hover{
+    color: darkblue;
+    cursor: pointer;
+}
+
+.add-to-do input{
+    position: absolute;
+    left: 50px;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 18px;
+    width: 350px;
+    margin-left: 10px;
+}
